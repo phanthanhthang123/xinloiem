@@ -37,9 +37,9 @@
     <audio src="./sound/sound.mp3"></audio>
     <script>
       const audio = document.querySelector('audio');
-      setTimeout(()=>{
-        audio.play()
-      },100)
+      document.body.addEventListener('click', () => {
+        audio.play(); // Phát lại âm thanh
+      });
 
     </script>
     <!-- Optional JavaScript -->
